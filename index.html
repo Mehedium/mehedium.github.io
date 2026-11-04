@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>My Upper/Lower Training Plan</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Plan">
+<meta name="theme-color" content="#1d5fd1">
+<style>
+:root{--bg:#f2f3f5;--sf:#fff;--ink:#14181d;--mu:#68717b;--ln:#dfe3e8;--ac:#1d5fd1;--ok:#17803d;--okb:#e5f4ea;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1216;--sf:#181d23;--ink:#eef1f4;--mu:#97a1ab;--ln:#2a323b;--ac:#6ea0ff;--ok:#43b96c;--okb:#14281c}}
+:root[data-theme="dark"]{--bg:#0e1216;--sf:#181d23;--ink:#eef1f4;--mu:#97a1ab;--ln:#2a323b;--ac:#6ea0ff;--ok:#43b96c;--okb:#14281c}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.35 -apple-system,system-ui,"Segoe UI",Roboto,sans-serif}
+.w{max-width:560px;margin:0 auto;padding:18px 14px calc(96px + env(safe-area-inset-bottom,0px))}
+.k{font-size:.9rem;font-weight:600;color:var(--ac);margin:0}
+h1{font-size:2.1rem;line-height:1.05;margin:2px 0 6px;letter-spacing:-.02em}
+.sub{margin:2px 0 0;color:var(--mu)}
+.pg{margin:14px 0 16px}
+.pg div{height:10px;background:var(--ln);border-radius:5px;overflow:hidden}
+.pg i{display:block;height:100%;width:0;background:var(--ok);transition:width .2s}
+.pg p{margin:6px 0 0;font-size:.92rem;font-weight:700}
+.bn{background:var(--okb);border:1.5px solid var(--ok);border-radius:10px;padding:10px 12px;margin:0 0 14px;font-weight:600}
+.r{background:var(--sf);border:1.5px solid var(--ln);border-radius:12px;padding:12px;margin:0 0 10px}
+.r.d{border-color:var(--ok);background:var(--okb)}
+.t{display:grid;grid-template-columns:44px 1fr;gap:12px;align-items:center}
+.ck{width:44px;height:44px;border:2.5px solid var(--mu);border-radius:10px;background:var(--sf);color:#fff;font:800 1.7rem/1 system-ui,sans-serif;cursor:pointer;padding:0}
+.ck[aria-pressed="true"]{background:var(--ok);border-color:var(--ok)}
+.nm{font-weight:700;font-size:1.05rem;line-height:1.2}
+.nm small{display:block;font-weight:500;color:var(--mu);font-size:.9rem;margin-top:3px}
+.nw,.dp{font-size:.72rem;font-weight:700;border:1.5px solid currentColor;border-radius:5px;padding:0 5px;margin-left:6px;vertical-align:1px;white-space:nowrap}
+.nw{color:var(--ac)}
+.dp{color:var(--mu);margin:0}
+.b{display:flex;flex-wrap:wrap;gap:12px 14px;align-items:flex-end;justify-content:space-between;margin-top:12px}
+.bxs{display:flex;flex-wrap:wrap;gap:8px}
+.bx{width:44px;height:44px;border:2px solid var(--mu);background:var(--bg);color:var(--mu);border-radius:10px;font:700 1rem system-ui,sans-serif;cursor:pointer;padding:0}
+.bx[aria-pressed="true"]{background:var(--ok);border-color:var(--ok);color:#fff;font-size:1.5rem}
+.wf{display:flex;flex-direction:column;gap:3px;font-size:.78rem;font-weight:600;color:var(--mu)}
+.wf input{width:136px;min-height:44px;font:700 1.05rem system-ui,sans-serif;color:var(--ink);background:var(--bg);border:2px solid var(--ln);border-radius:10px;padding:0 10px}
+.wf input:focus{border-color:var(--ac);outline:none}
+.was{font-size:.8rem;color:var(--mu);margin:8px 0 0}
+.was:empty{display:none}
+fieldset{border:2px solid var(--ac);border-radius:14px;padding:10px 8px 0;margin:0 0 10px;min-width:0}
+legend{padding:0 8px;font-weight:700;font-size:.85rem;color:var(--ac)}
+details{margin:18px 0 0;border:1.5px dashed var(--mu);border-radius:12px;padding:0 10px}
+summary{cursor:pointer;font-weight:700;padding:14px 4px;min-height:44px}
+details .r{margin-bottom:10px}
+.fin{display:block;width:100%;min-height:56px;font:800 1.1rem system-ui,sans-serif;color:#fff;background:var(--ok);border:0;border-radius:12px;margin-top:18px;cursor:pointer}
+.fin.c{background:var(--ac)}
+.lk{display:block;margin:6px auto 0;padding:12px;background:none;border:0;color:var(--mu);font:inherit;text-decoration:underline;cursor:pointer}
+.ft{margin-top:22px;color:var(--mu);font-size:.92rem}
+.ft ul{padding-left:18px;margin:8px 0}
+.ft li{margin:5px 0}
+nav{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--sf);border-top:1px solid var(--ln);display:grid;grid-template-columns:repeat(5,1fr);gap:4px;padding:6px 6px calc(6px + env(safe-area-inset-bottom,0px))}
+.tab{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:52px;background:none;border:0;border-radius:10px;color:var(--mu);font:inherit;cursor:pointer;padding:4px 0}
+.tab b{font-size:1.3rem;line-height:1.1}
+.tab span{font-size:.72rem}
+.tab[aria-pressed="true"]{background:color-mix(in srgb,var(--ac) 15%,var(--sf));color:var(--ac)}
+.tab em{position:absolute;top:2px;right:14%;font-style:normal;font-size:.68rem;font-weight:800;color:#fff;background:var(--ok);border-radius:50%;width:16px;height:16px;line-height:16px;text-align:center}
+button:focus-visible,summary:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
+@media(max-width:360px){.bx,.ck{width:40px;height:40px}.t{grid-template-columns:40px 1fr}.wf input{width:120px}}
+</style></head><body>
+<div class="w">
+<main id="m"></main>
+<div class="ft"><ul>
+<li>Tap a numbered box to tick a set, or the big box beside the name to tick the whole exercise.</li>
+<li>Tap a weight to change it. It is saved on this phone and shared by the same exercise on other days.</li>
+<li>Finish Day saves today’s date, clears the ticks and moves you to the next day. The app reopens on the day you were last on.</li>
+<li>A dark-blue outline around two exercises marks a superset: one set of each, then rest. “new” means I added it. DUP means it is similar to a core exercise.</li>
+<li>Rest 2–3 minutes between heavy sets. Add weight once you hit the top of the rep range on every set.</li>
+</ul></div>
+</div>
+<nav id="t" aria-label="Training days"></nav>
+<script>
+var D=[
+{n:1,s:"Upper",t:"Day 1: Upper body",m:"About 80 min",c:"#3b6cf0",ch:["Back","Chest","Shoulders","Triceps","Biceps","Traps","Forearms"],
+g:[[["Lat pulldown","100-1","3 × 8–12"]],[["Chest press seated machine (low)","25 kg","3 × 8–12"]],[["Seated row","100-2","3 × 8–12"]],[["Seated dip (4)","55 kg","3 × 8–12"]],[["Shoulder press machine","20 kg","3 × 8–12"]],[["Machine lateral raise (low seat)","10 kg","4 × 10–15"]],[["Reverse fly (3)","41","3 × 12–15"]],[["Cable tricep pushdown","45 kg","3 × 8–12"],["Preacher curl (low)","31 kg","3 × 8–12"]],[["Incline dumbbell curl","start light","3 × 10–12",1]],[["Shrug","start light","3 × 10–15",1],["Wrist curl","start light","2–3 × 12–20",1]]],
+x:[["Assisted pull-up","37","Lat pulldown"],["Seated lat pull cable","5th weight","Lat pulldown"],["Low row (8)","35","Seated row"],["Seated chest press low","15–20 kg","Chest press"],["Machine shoulder press","20 kg","Shoulder press machine"],["Tricep pushdown solo cab, straight bar (slow)","27 kg / 23","Cable tricep pushdown"]]},
+{n:2,s:"Lower",t:"Day 2: Lower body",m:"About 60 min",c:"#12a371",ch:["Quads","Hamstrings","Glutes","Calves","Abs"],
+g:[[["Leg press (or hack squat / squat)","start light","3 × 8–12",1]],[["Seated leg curl","start light","3 × 8–12",1]],[["Leg extension","65 kg","3 × 8–10"]],[["Hip thrust","start light","3 × 8–12",1]],[["Calf raise","60 kg","3 × 10–12"]],[["Ab crunch (top)","65 kg","3 × 10–12"]]],
+x:[["Hip abduction machine (new add-on)","start light","Outer glutes"]]},
+{n:3,s:"Upper",t:"Day 3: Upper body",m:"About 80 min",c:"#8a5cf0",ch:["Back","Chest","Shoulders","Triceps","Biceps","Traps","Forearms"],
+g:[[["T-bar row","40 kg","4 × 8–12"]],[["Pec deck","77 kg","3 × 10–12"]],[["Lat pullover high cable","45–50 kg","3 × 10–12"]],[["Chest low to high cable (IV)","20 kg","3 × 10–12"]],[["Auto seated shoulder press","58.5 kg","3 × 8–12"]],[["Face pull (26)","50–54","4 × 12–15"]],[["Cross body shoulder cable (IV)","10 kg","4 × 10–15"]],[["Tricep overhead straight bar/cable","36 kg","3 × 8–12"],["Cable hammer curl (low)","23 kg","3 × 8–12"]],[["EZ-bar curl, heavy","start light","3 × 6–10",1]],[["Shrug","start light","3 × 10–15",1],["Reverse wrist curl","start light","2–3 × 12–20",1]]],
+x:[["Barbell bent-over row (also works lower back)","15 kg/side","T-bar row"],["Chest supported row back (8)","35","T-bar row"]]},
+{n:4,s:"Lower",t:"Day 4: Lower body",m:"About 60 min",c:"#b86e00",ch:["Hamstrings","Glutes","Quads","Calves","Abs"],
+g:[[["Romanian deadlift (or back extension)","start light","3 × 8–10",1]],[["Lying leg curl","start light","4 × 12–15",1]],[["Leg press, lighter","start light","3 × 12–15",1]],[["Leg extension","65 kg","3 × 12–15"]],[["Calf raise","60 kg","4 × 12–15"]],[["Ab crunch (top)","65 kg","3 × 12–15"]],[["Plank or cable anti-rotation press","bodyweight / light","3 × 30–45 sec",1]]],x:[]},
+{n:5,s:"Optional",t:"Day 5: Arms and shoulders",m:"About 50 min, optional",c:"#d6336c",o:1,ch:["Biceps","Triceps","Shoulders","Calves","Abs"],
+g:[[["Pull-ups (first, while fresh; underhand hits biceps more)","4 clean","3 × max clean"]],[["Machine lateral raise (low seat)","10 kg","3 × 12–20"]],[["Reverse fly (3)","41","3 × 12–20"]],[["V-bar tricep pushdown solo cab","32 kg","3 × 10–15"],["Bayesian cable curl (arm behind body)","start light","3 × 12–15",1]],[["Calf raise","60 kg","3 × 12–15"]],[["Ab crunch (top)","65 kg","3 × 12–15"]]],x:[]}
+];
+var S={cur:1,done:{},w:{},fin:{}},M=document.getElementById("m"),T=document.getElementById("t"),msg="",arm=0;
+try{var q=JSON.parse(localStorage.getItem("plan-v2")||"null");if(q&&typeof q==="object")S=Object.assign(S,q)}catch(e){}
+if(!D[S.cur-1])S.cur=1;
+function save(){try{localStorage.setItem("plan-v2",JSON.stringify(S))}catch(e){}}
+function h(tag,cls,txt){var e=document.createElement(tag);if(cls)e.className=cls;if(txt!=null)e.textContent=txt;return e}
+function dt(ts){return new Date(ts).toLocaleDateString(undefined,{month:"short",day:"numeric"})}
+function ns(s){var m=s.match(/^(\d+)(?:–(\d+))?/);return +(m[2]||m[1])}
+function wasTxt(n){var c=S.w[n];if(!c||!c.log||!c.log.length)return"";var l=c.log[c.log.length-1];return"Was "+l[1]+", changed "+dt(l[0])}
+function prog(){var d=D[S.cur-1],tot=0,dn=0;d.g.forEach(function(g){g.forEach(function(r){for(var s=1;s<=ns(r[2]);s++){tot++;if(S.done[d.n+"|"+r[0]+"|"+s])dn++}})});
+ var p=document.getElementById("pb");if(p){p.style.width=(tot?dn/tot*100:0)+"%";document.getElementById("pt").textContent=dn+" of "+tot+" sets ticked"}}
+function wf(r,was){var c=S.w[r[0]],v=c?c.v:r[1],l=h("label","wf","Weight"),i=h("input");i.value=v;i.setAttribute("enterkeyhint","done");i.setAttribute("aria-label","Weight for "+r[0]);
+ i.onfocus=function(){i.select()};
+ i.onchange=function(){var o=S.w[r[0]]||{v:r[1],log:[]},nv=i.value.trim();if(!nv||nv===o.v){i.value=o.v;return}o.log=(o.log||[]).concat([[Date.now(),o.v]]);o.v=nv;S.w[r[0]]=o;save();was.textContent=wasTxt(r[0])};
+ l.appendChild(i);return l}
+function row(d,r,ex){var k=d.n+"|"+r[0],e=h("div","r"),t=h("div","t"),ck=h("button","ck"),nm=h("div","nm",r[0]),n=ex?0:ns(r[2]),bx=[],was=h("p","was",wasTxt(r[0]));
+ ck.setAttribute("aria-label","Tick "+r[0]);if(r[3])nm.appendChild(h("span","nw","new"));
+ nm.appendChild(h("small",0,ex?"":r[2]));if(ex)nm.lastChild.appendChild(h("span","dp",r[2]==="Outer glutes"?"Optional add-on":"DUP of "+r[2]));
+ t.appendChild(ck);t.appendChild(nm);e.appendChild(t);
+ var b=h("div","b"),xs=h("div","bxs");
+ function paint(){var on=ex?!!S.done[k]:bx.every(function(o){return S.done[o.k]});e.className="r"+(on?" d":"");ck.setAttribute("aria-pressed",on);ck.textContent=on?"✓":"";bx.forEach(function(o){var y=!!S.done[o.k];o.el.setAttribute("aria-pressed",y);o.el.textContent=y?"✓":o.s});prog()}
+ function flip(key){if(S.done[key])delete S.done[key];else S.done[key]=1}
+ for(var s=1;s<=n;s++)(function(s){var el=h("button","bx"),o={el:el,s:s,k:k+"|"+s};el.setAttribute("aria-label","Set "+s+" of "+r[0]);el.onclick=function(){flip(o.k);save();paint()};bx.push(o);xs.appendChild(el)})(s);
+ ck.onclick=function(){if(ex)flip(k);else{var on=bx.every(function(o){return S.done[o.k]});bx.forEach(function(o){if(on)delete S.done[o.k];else S.done[o.k]=1})}save();paint()};
+ if(n)b.appendChild(xs);b.appendChild(wf(r,was));e.appendChild(b);e.appendChild(was);paint();return e}
+function clr(n){Object.keys(S.done).forEach(function(k){if(k.indexOf(n+"|")===0)delete S.done[k]})}
+function tabs(){T.innerHTML="";D.forEach(function(d){var b=h("button","tab"),f=S.fin[d.n]&&Date.now()-S.fin[d.n]<6048e5;b.appendChild(h("b",0,d.n));b.appendChild(h("span",0,d.s));if(f)b.appendChild(h("em",0,"✓"));
+ b.setAttribute("aria-pressed",d.n===S.cur);b.setAttribute("aria-label","Day "+d.n+", "+d.s+(d.o?", optional":"")+(f?", done this week":""));
+ b.onclick=function(){S.cur=d.n;save();render();window.scrollTo(0,0)};T.appendChild(b)})}
+function render(){var d=D[S.cur-1];tabs();M.innerHTML="";
+ if(msg){M.appendChild(h("div","bn",msg));msg=""}
+ M.appendChild(h("p","k","Day "+d.n+(d.o?", optional":"")));M.appendChild(h("h1",0,d.t.replace(/^Day \d: /,"")));
+ M.appendChild(h("p","sub",d.m+". "+d.ch.join(", ")+"."));M.appendChild(h("p","sub",S.fin[d.n]?"Last done "+dt(S.fin[d.n]):"Not done yet."));
+ var pg=h("div","pg"),bar=h("div"),pb=h("i");pb.id="pb";bar.appendChild(pb);pg.appendChild(bar);var pt=h("p");pt.id="pt";pg.appendChild(pt);M.appendChild(pg);
+ d.g.forEach(function(g){if(g.length===1){M.appendChild(row(d,g[0]))}else{var f=h("fieldset");f.appendChild(h("legend",0,"Superset: one set of each, then rest"));g.forEach(function(r){f.appendChild(row(d,r))});M.appendChild(f)}});
+ if(d.x.length){var dd=h("details");dd.appendChild(h("summary",0,"If you have time ("+d.x.length+")"));d.x.forEach(function(x){dd.appendChild(row(d,x,1))});M.appendChild(dd)}
+ var f=h("button","fin","Finish Day "+d.n);
+ f.onclick=function(){if(!arm){arm=1;f.textContent="Tap again to save Day "+d.n+" and move on";f.className="fin c";setTimeout(function(){arm=0;if(f.isConnected){f.textContent="Finish Day "+d.n;f.className="fin"}},4000);return}
+  arm=0;S.fin[d.n]=Date.now();clr(d.n);var nx=d.n>=4?1:d.n+1;S.cur=nx;msg="Day "+d.n+" saved. Next up: Day "+nx+".";save();render();window.scrollTo(0,0)};
+ M.appendChild(f);var c=h("button","lk","Clear this day’s ticks");c.onclick=function(){clr(d.n);save();render()};M.appendChild(c);prog()}
+render();
+if('serviceWorker' in navigator){try{navigator.serviceWorker.register('sw.js').catch(function(){})}catch(e){}}
+</script></body></html>
